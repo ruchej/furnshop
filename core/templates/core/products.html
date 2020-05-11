@@ -1,108 +1,63 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'core/css/main.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'core/css/fonts.css' %}">
-    <title>Интерьер</title>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <a href="#"><img class="logo" src="{% static 'core/img/logo.svg' %}" alt="logo"></a>
-      <nav>
-        <ul>
-          <li><a href="/">HOME</a></li>
-          <li class="active"><a href="/products/">PRODUCTS</a></li>
-          <li><a href="#">HISTORY</a></li>
-          <li><a href="#">SHOWROOM</a></li>
-          <li><a href="/contact/">CONTACT</a></li>
-          <li><a href="#">
-            <img class="search" src="{% static 'core/img/search.svg' %}" alt="search">
-          </a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="hero">
-      <div class="hero-content">
-        <h2 class="hero-name">Our Products Range</h2>
-      </div>
-    </div>
-    <div class="featured-product">
-      <div class="tab-controll">
-        <div>
-          <a class="tc-active" href="#">All</a>
-          <a class="tc-nav" href="#">Home</a>
-          <a class="tc-nav" href="#">Office</a>
-          <a class="tc-nav" href="#">Furniture</a>
-          <a class="tc-nav" href="#">Modern</a>
-          <a class="tc-nav" href="#">Classic</a>
-        </div>
-      </div>
-      <div class="trending-content">
-        <a href="product-deails.html"><img src="{% static 'core/img/product-11@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-21@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-31@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-41@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-5@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-6@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-11@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-21@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-31@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-41@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-5@1X.png' %}" alt=""></a>
-        <a href="product-deails.html"><img src="{% static 'core/img/product-6@1X.png' %}" alt=""></a>
-      </div>
-    </div>
-    <div class="promo-product">
-    <div class="promo">
-      <img class="promo-bg" src="{% static 'core/img/promo-img1.png' %}">
-      <div class="promo-content">
-        <p class="promo-tag">exclusive</p>
-        <h2 class="promo-name">Fishnet Chair</h2>
-        <p class="promo-details">Seat and back with
-          upholstery made of cold cure foam. Steel frame,
-          available in matt powder-coated black
-          or highly polished chrome.
-        </p>
-        <a href="#" class="btn">Order Us</a>
-      </div>
-    </div>
-    <div class="promo">
-      <img class="promo-bg" src="{% static 'core/img/promo-img.png' %}">
-      <div class="promo-content">
-        <p class="promo-tag">exclusive</p>
-        <h2 class="promo-name">Fishnet Chair</h2>
-        <p class="promo-details">Seat and back with
-          upholstery made of cold cure foam. Steel frame,
-          available in matt powder-coated black
-          or highly polished chrome.
-        </p>
-        <a href="#" class="btn">Order Us</a>
-      </div>
-    </div>
-    </div>
-    <footer>
-      <div class="f-block">
-        <h5>Contact Us</h5>
-        <p>132A Bridge Road Richmond VIC Australia.</p>
-        <p>Talk to us on 1300 132 info@interior.com</p>
-      </div>
-      <div class="f-block">
-        <h5>Useful Information</h5>
-        <p>Sales terms Customer care Delivery</p>
-        <p>Architect accounts Careers Exchanges & returns</p>
-      </div>
-      <div class="f-block">
-        <h5>Let’s Stay in Touch!</h5>
-        <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
-        <form action="">
-          <input type="email" name="email" id="email" placeholder="your email address">
-          <input type="submit" value>
-        </form>
-      </div>
-    </footer>
+{% block content %}
+<div class="hero">
+  <div class="hero-content">
+    <h2 class="hero-name">Our Products Range</h2>
   </div>
-</body>
-</html>
+</div>
+<div class="featured-product">
+  <div class="tab-controll">
+    <div>
+      <a class="tc-active" href="#">All</a>
+      <a class="tc-nav" href="#">Home</a>
+      <a class="tc-nav" href="#">Office</a>
+      <a class="tc-nav" href="#">Furniture</a>
+      <a class="tc-nav" href="#">Modern</a>
+      <a class="tc-nav" href="#">Classic</a>
+    </div>
+  </div>
+  <div class="trending-content">
+    <a href="product-deails.html"><img src="{% static 'core/img/product-11@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-21@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-31@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-41@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-5@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-6@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-11@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-21@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-31@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-41@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-5@1X.png' %}" alt=""></a>
+    <a href="product-deails.html"><img src="{% static 'core/img/product-6@1X.png' %}" alt=""></a>
+  </div>
+</div>
+<div class="promo-product">
+  <div class="promo">
+    <img class="promo-bg" src="{% static 'core/img/promo-img1.png' %}">
+    <div class="promo-content">
+      <p class="promo-tag">exclusive</p>
+      <h2 class="promo-name">Fishnet Chair</h2>
+      <p class="promo-details">Seat and back with
+        upholstery made of cold cure foam. Steel frame,
+        available in matt powder-coated black
+        or highly polished chrome.
+      </p>
+      <a href="#" class="btn">Order Us</a>
+    </div>
+  </div>
+  <div class="promo">
+    <img class="promo-bg" src="{% static 'core/img/promo-img.png' %}">
+    <div class="promo-content">
+      <p class="promo-tag">exclusive</p>
+      <h2 class="promo-name">Fishnet Chair</h2>
+      <p class="promo-details">Seat and back with
+        upholstery made of cold cure foam. Steel frame,
+        available in matt powder-coated black
+        or highly polished chrome.
+      </p>
+      <a href="#" class="btn">Order Us</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
