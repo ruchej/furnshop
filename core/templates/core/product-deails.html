@@ -1,88 +1,44 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <title>Интерьер</title>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <a href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li class="active"><a href="products.html">PRODUCTS</a></li>
-          <li><a href="#">HISTORY</a></li>
-          <li><a href="#">SHOWROOM</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="#">
-            <img class="search" src="img/search.svg" alt="search">
-          </a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="products-details">
-      <div class="products-details-dum"></div>
-      <div class="sub-menu">
-        <a href="#">All</a>
-        <a href="#">Home</a>
-        <a href="#">Office</a>
-        <a href="#">Furniture</a>
-        <a href="#">Modern</a>
-        <a href="#">Classic</a>
-      </div>
-      <div class="products-content">
-        <div class="product-slider">
-          <img src="img/product-slider@1X.png" alt="">
-        </div>
-        <div class="product-desc">
-          <h2>Fishnet Chair</h2>
-          <p class="slider-tag">Hot Deal</p>
-          <p class="price">36.7</p>
-          <a href="#" class="btn-red">Order Us ></a>
-          <div class="product-desc-txt">
-            <p>The majesty of Mountains - Ugmonk style.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-            <p>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            <p>sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="trending">
-      <div class="trending-title">
-        <h2>Related Products</h2>
-        <a class="tc-expl" href="#">explore all ></a>
-      </div>
-      <div class="trending-products">
-        <a href="product-deails.html"><img src="img/product-11.png" alt=""></a>
-        <a href="product-deails.html"><img src="img/product-21.png" alt=""></a>
-        <a href="product-deails.html"><img src="img/product-31.png" alt=""></a>
-      </div>
-    </div>
-    <footer>
-      <div class="f-block">
-        <h5>Contact Us</h5>
-        <p>132A Bridge Road Richmond VIC Australia.</p>
-        <p>Talk to us on 1300 132 info@interior.com</p>
-      </div>
-      <div class="f-block">
-        <h5>Useful Information</h5>
-        <p>Sales terms Customer care Delivery</p>
-        <p>Architect accounts Careers Exchanges & returns</p>
-      </div>
-      <div class="f-block">
-        <h5>Let’s Stay in Touch!</h5>
-        <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
-        <form action="">
-          <input type="email" name="email" id="email" placeholder="your email address">
-          <input type="submit" value>
-        </form>
-      </div>
-    </footer>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="products-details">
+  <div class="products-details-dum"></div>
+  <div class="sub-menu">
+    <a href="#">All</a>
+    <a href="#">Home</a>
+    <a href="#">Office</a>
+    <a href="#">Furniture</a>
+    <a href="#">Modern</a>
+    <a href="#">Classic</a>
   </div>
-</body>
-</html>
+  <div class="products-content">
+    <div class="product-slider">
+      <img src="img/product-slider@1X.png" alt="">
+    </div>
+    <div class="product-desc">
+      <h2>Fishnet Chair</h2>
+      <p class="slider-tag">Hot Deal</p>
+      <p class="price">36.7</p>
+      <a href="#" class="btn-red">Order Us ></a>
+      <div class="product-desc-txt">
+        <p>The majesty of Mountains - Ugmonk style.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <p>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <p>sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="trending">
+  <div class="trending-title">
+    <h2>Related Products</h2>
+    <a class="tc-expl" href="#">explore all ></a>
+  </div>
+  <div class="trending-products">
+    <a href="product-deails.html"><img src="img/product-11.png" alt=""></a>
+    <a href="product-deails.html"><img src="img/product-21.png" alt=""></a>
+    <a href="product-deails.html"><img src="img/product-31.png" alt=""></a>
+  </div>
+</div>
+{% endblock %}
